@@ -45,6 +45,7 @@ h2 {
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  gap: 10px;
 }
 
 .links a {
@@ -76,4 +77,12 @@ h2 {
 .links span {
   position: relative;
   z-index: 1;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 100px;
 }

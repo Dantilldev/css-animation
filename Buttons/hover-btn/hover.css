@@ -1,0 +1,88 @@
+.hover-btn {
+  position: relative;
+  text-decoration: none;
+  background-color: lime;
+  padding: 30px 80px;
+  color: #272727;
+  font-size: 32px;
+  border: 4px #272727 solid;
+  transition: all 1s;
+}
+
+.hover-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  transition: all 1s;
+  transform: rotateX(90deg);
+  z-index: 0;
+}
+
+.hover-btn:hover::before {
+  transform: rotateX(0deg);
+}
+.hover-btn span {
+  z-index: 1;
+  position: relative;
+}
+
+.hover-btn:hover {
+  color: white;
+}
+
+/* ==== Hover btn2 ==== */
+.hover-btn2 {
+  position: relative;
+  text-decoration: none;
+  background-color: lime;
+  padding: 30px 40px;
+  color: #272727;
+  font-size: 24x;
+  border: 4px #272727 solid;
+  transition: all 1s;
+}
+
+.hover-btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  transition: all 1s;
+  transform: rotateX(90deg);
+  z-index: 0;
+}
+.hover-btn2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  transition: all 1s;
+  transform: rotateY(90deg);
+  z-index: 0;
+}
+
+.hover-btn2:hover::before {
+  transform: rotateX(0deg);
+}
+.hover-btn2:hover::after {
+  transform: rotateY(0deg);
+}
+
+.hover-btn2 span {
+  z-index: 1;
+  position: relative;
+}
+
+.hover-btn2:hover {
+  color: white;
+}
