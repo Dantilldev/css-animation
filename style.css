@@ -14,8 +14,9 @@ body {
   height: 100vh;
 }
 
-a {
-  text-decoration: none;
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -36,4 +37,43 @@ section {
 }
 h2 {
   margin-top: 0;
+}
+/* Links btns */
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  border: 2px #272727 solid;
+  padding: 2px 20px;
+  overflow: hidden;
+  color: #272727;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(176, 103, 13);
+  z-index: 0;
+  transform: translateX(-100%);
+  transition: all 0.2s ease-in;
+}
+
+.links a:hover::before {
+  transform: translateX(0);
+}
+
+.links span {
+  position: relative;
+  z-index: 1;
 }
