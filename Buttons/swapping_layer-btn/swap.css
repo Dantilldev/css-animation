@@ -1,0 +1,53 @@
+.swap-btn {
+  position: relative;
+  background-color: #272727;
+  padding: 40px 80px;
+  color: #272727;
+  font-size: 32px;
+  border: 4px #272727 solid;
+  transition: all 1s;
+  text-decoration: none;
+  overflow: hidden;
+  color: transparent;
+}
+
+.swap-btn::before {
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: yellowgreen;
+  color: #272727;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.swap-btn::after {
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: yellowgreen;
+  color: #272727;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translate(-100%, 100%);
+}
+
+.swap-btn:hover::before {
+  transform: translate(100%, -100%);
+}
+
+.swap-btn:hover::after {
+  transform: translate(0, 0);
+}

@@ -1,0 +1,33 @@
+.scale-btn {
+  position: relative;
+  background-color: #d10c0c;
+  padding: 40px 80px;
+  color: #272727;
+  font-size: 32px;
+  border: 4px #272727 solid;
+  transition: all 1s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.scale-btn::before {
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #d10c0c;
+  color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.scale-btn:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
