@@ -1,0 +1,16 @@
+.stretch-btn {
+  position: relative;
+  text-decoration: none;
+  color: firebrick;
+  padding: 40px 80px;
+  font-size: 40px;
+  font-weight: 300;
+  border: 4px firebrick solid;
+  transition: all 1s;
+}
+
+.stretch-btn:hover {
+  font-weight: 900;
+  letter-spacing: 10px;
+  border: 8px firebrick soid;
+}
