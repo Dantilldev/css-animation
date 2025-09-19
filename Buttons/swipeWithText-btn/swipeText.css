@@ -1,0 +1,52 @@
+/* ===== Button 1 ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.swipeWithText-btn {
+  position: relative;
+  background-color: #dda630;
+  padding: 30px 80px;
+  color: #272727;
+  font-size: 32px;
+  border: 4px #272727 solid;
+  transition: all 1s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.swipeWithText-btn:before {
+  content: "Hello!";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(10, 101, 175);
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  z-index: 2;
+  transition: all 1s;
+  /* Centrerar texten i pesudo element */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipeWithText-btn:hover:before {
+  transform: translateY(0);
+}
+
+.swipeWithText-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.swipeWithText-btn:hover {
+  color: #fff;
+}
