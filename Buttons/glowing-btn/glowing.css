@@ -1,0 +1,30 @@
+.glowing-btn {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: 40px;
+  border: 2px solid blanchedalmond;
+  padding: 40px 80px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.glowing-btn:hover {
+  background-color: blueviolet;
+}
+
+.glowing-btn::before {
+  content: "";
+  background-color: white;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(-100%) rotate(45deg);
+}
+
+.glowing-btn:hover::before {
+  transform: translateX(100%) rotate(45deg);
+  transition: all 0.3s;
+}
